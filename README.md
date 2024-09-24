@@ -2,7 +2,9 @@
 
 ## Intorduction
 
-The simulation of Toxic Comment Classification Challenge by Kaggle is conducted to classify different levels of toxic online comments in social media. Data quality analysis and the data cleaning and preprocessing techniques will first be applied in train.csv, then train the three different machine learning models. The best model will be selected to predict the probability of toxic comment in test.csv.
+The simulation of Toxic Comment Classification Challenge by Kaggle is conducted to classify different levels of toxic online comments in social media. Data quality analysis and the data cleaning and preprocessing techniques will first be applied in train.csv, then train the three different machine learning models. The best model will be selected to predict the probability of toxic comment in test.csv. The details and the dataset of the challenge can be found in the website below.
+
+https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/overview
 
 ## Steps on training the models
 
