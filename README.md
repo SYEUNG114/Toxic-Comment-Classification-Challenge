@@ -22,9 +22,9 @@ The simulation of Toxic Comment Classification Challenge by Kaggle is conducted 
 
 4.  Model training: 3 ML models is deployed after consideration of dataset imbalanced and model efficiency.
 
-ComplementNB - one of the naive bayes algorithms but it is particularly used for imbalanced dataset.
-RandomForestClassifier - set of decision trees, class_weight='balanced' parameter is added to assign higher weights to the minority class (less frequent class) and lower weights to the majority class (more frequent class). 
-SGDClassifier - it is equivalent to LogisticRegressClassifier if the parameter of loss='log_loss' is added but SGDClassifier offers higher efficiency of handling large dataset. class_weight='balanced' parameter is also added to address da-taset imbalanced issue.
+   - ComplementNB - one of the naive bayes algorithms but it is particularly used for imbalanced dataset.
+   - RandomForestClassifier - set of decision trees, class_weight='balanced' parameter is added to assign higher weights to the minority class (less frequent class) and lower weights to the majority class (more frequent class). 
+   - SGDClassifier - it is equivalent to LogisticRegressClassifier if the parameter of loss='log_loss' is added but SGDClassifier offers higher efficiency of handling large dataset. class_weight='balanced' parameter is also added to address da-taset imbalanced issue.
 
 5.  Model evaluation: Given the results provided, the choice of feature extraction methods (Bag of words and TFIDF) did not have significant impact of the model performance in terms of accuracy. However, models with TfidfVectorizer performed better with weighted average f1 score. Considering the imbalanced dataset, weighted average f1 score is more reliable metrics as it considers both precision and recall simultaneously. SGDClassifier with TfidfVectorizer got the highest weighted average f1 score among the models despite the slightly lower accuracy so clf6 is considered the best models to classify text data in test.csv.
 
