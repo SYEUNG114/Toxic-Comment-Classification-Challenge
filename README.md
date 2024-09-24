@@ -9,14 +9,14 @@ The simulation of Toxic Comment Classification Challenge by Kaggle is conducted 
 1.  Data quality checking: 'train.csv' contains 159571 rows of comments and 8 columns of ‘id’, ‘comment_text’ and 6 different classes. It is multilabel classification problem because each row can be assigned to multiple classes simultaneously. No null values is found in the whole dataset. However, dataset imbalanced is detected as 143346 comments out of 159571 are clean (no label in all classes) while only 16225 comments have at least 1 label.
    
 2.  Data cleaning and preprocessing: A function is created to clean the text data and remove all the unnecessary elements by the following actions:
-  1.	Replace common short-form words with expanded forms
-  2.	Remove html chars
-  3.	Remove text in square brackets and parenthesis
-  4.	Remove non-ascii chars
-  5.	Remove words containing numbers
-  6.	Tokenize the text
-  7.	Lemmatize each token and remove stop words, punctuation, and whitespace
-  8.	Join the tokens back into a cleaned text
+   - Replace common short-form words with expanded forms
+   - Remove html chars
+   - Remove text in square brackets and parenthesis
+   - Remove non-ascii chars
+   - Remove words containing numbers
+   - Tokenize the text
+   - Lemmatize each token and remove stop words, punctuation, and whitespace
+   - Join the tokens back into a cleaned text
 
 3.  Data preparation: Train test split is applied to split the data into training and testing sets. 80% of the data will be used for training and the rest will be used for prediction. It is worth noting that machine learning models only understand numbers so converting texts into numbers is necessary step. Bag of Words and TF-IDF methods are used for text vectorization by transforming X_train and X_test by applying CountVectorizer and TfidfVectorizer in scikit-learn library.
 
